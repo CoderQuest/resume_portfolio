@@ -1,3 +1,8 @@
+/*******************
+light blue: #52a7e0
+dark blue: #3498db;
+*******************/
+
 /**************
 Basic Setup
 **************/
@@ -31,7 +36,6 @@ Social Media Links
 	display: flex;
 }
 .ssmedia-links ul li {
-	/*display: inline;*/
 	list-style: none;
 	margin: auto;
 	background: #FFF;
@@ -39,29 +43,75 @@ Social Media Links
 	height: 50px;
 	width: 50px;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 12px;
 }
 
 .ssmedia-links ul li a,
 .ssmedia-links ul li a:visited {
 	text-decoration: none;
 	color: #3498db;
-	margin-left: 
 }
 
 /**************
 Profile Img
 **************/
-.profile-image span {
+.profile-sidebar {
+	margin-top: 30px;
+}
+.profile-sidebar .profile-image {
 /*	width: 100%;*/
 	border: 8px solid #7f8c8d;
 	border-radius: 50%;
 	width: 245px;
 	height: 245px;
-	background-image: url(img/profile_pic.jpg);
+	background-image: url(../img/profile_pic.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
 }
 
+/**************
+Profile info
+**************/
+.profile-info {
+	text-align: center;
+}
 
+.profile-info h1 {
+	font-size: 230%;
+	color: #404040;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.hr-line {
+	border: 2px solid #52a7e0;
+	width: 100px;
+	margin: 0 auto 10px auto;
+}
+
+.hr-v2 {
+	border: 2px solid #404040;
+}
+.profile-sidebar h5 {
+	font-size: 120%;
+	margin-bottom: 30px;
+}
+
+.get-in-touch li {
+	display: inline-block;
+	color: #FFF;
+	background-color: #3498db;
+	height: inherit;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.get-in-touch li i.fa {
+	width: 45px;
+	height: 45px;
+	padding-top: 13px;
+}
 /**************
 Navigation Setup
 **************/
