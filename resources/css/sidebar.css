@@ -1,6 +1,7 @@
 /*******************
 light blue: #52a7e0
 dark blue: #3498db;
+background color: #E7ECEE
 *******************/
 
 /**************
@@ -21,6 +22,7 @@ html {
 	font-size: 20px;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;   /*renders font in a perfect way over speed*/
+	background-color: #E7ECEE;
 }
 
 /****************
