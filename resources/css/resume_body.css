@@ -1,3 +1,9 @@
+/*******************
+light blue: #52a7e0
+dark blue: #3498db;
+background color: #E7ECEE
+*******************/
+
 #resume-container {
 	border-top: 8px solid #3498db;
 }
@@ -121,25 +127,45 @@ div.tabs{
 	padding: 0px;
 	list-style: none;
 }
-div.tabs h3{
+div.tabs h6{
 	background: none;
 	color: #222;
-	/*display: inline-block;*/
 	padding: 10px 15px;
 	cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 20px;
+-webkit-box-shadow: inset 1px 0px 20px 1px rgba(82,167,224,1);
+-moz-box-shadow: inset 1px 0px 20px 1px rgba(82,167,224,1);
+box-shadow: inset 1px 0px 20px 1px rgba(82,167,224,1);
 }
 
-div.tabs h3.current{
-	background: #ededed;
-	color: #222;
+div.tabs h6.current{
+	background: #3498db;
+	color: #FFF;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 0px;
 }
 
 .tab-content{
 	display: none;
-	background: #ededed;
+	/*background: #ededed;*/
 	padding: 15px;
+  margin-bottom: 10px;
+  background-color: #a0d0ef;
+  color: #FFF;
+  border-radius: 0 0 20px 20px;
 }
 
-.tab-content.current{
-	display: inherit;
-}				
+h6:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.work-title {
+  float: left;
+}
+
+.work-date {
+  float: right;
+}

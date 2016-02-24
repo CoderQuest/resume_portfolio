@@ -7,13 +7,29 @@ $(document).ready(function() {
   })
 
   // experience tabs
-  $('div.tabs h3').click(function(){
+  $('div.tabs h6').click(function(){
     var tab_id = $(this).attr('data-tab');
 
-    $('div.tabs h3').removeClass('current');
-    $('.tab-content').removeClass('current').slideUp(1000);
+    if ($(this).hasClass('current')) {
+      setTimeout(function(){
+        $('div.tabs h6').removeClass('current');  
+      }, 500);
 
-    $(this).addClass('current');
-    $("#"+tab_id).addClass('current').slideDown(1000);
+      $('.tab-content').removeClass('current').slideUp(500);
+    } else {
+      setTimeout(function(){
+        $('div.tabs h6').removeClass('current');       
+      }, 100)
+      
+      $('.tab-content').removeClass('current').slideUp(500);
+
+      var self = $(this); 
+      // $(this).addClass('current');
+      setTimeout(function(){
+        self.addClass('current');
+        $("#"+tab_id).addClass('current').slideDown(500);
+      }, 100);
+      
+    }
   })
 });
