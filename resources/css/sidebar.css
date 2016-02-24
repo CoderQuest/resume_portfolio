@@ -18,7 +18,7 @@ Basic Setup
 html {
 	background-color: #ecf0f1;
 	color: #555;
-	font-family: 'lato', 'Arial', 'sans-serif';
+	font-family: 'Georgia','lato', 'Arial', 'sans-serif';
 	font-size: 20px;
 	font-weight: 300;
 	text-rendering: optimizeLegibility;   /*renders font in a perfect way over speed*/
